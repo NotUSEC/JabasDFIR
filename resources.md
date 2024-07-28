@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Resources
-permalink: /JabasDFIR/resources/
+permalink: /resources/
 ---
 
 Контентик
