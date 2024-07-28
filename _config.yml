@@ -23,9 +23,9 @@ show_excerpts: true
 author: NotUsec
 #linkedin_username: 
 #twitter_username: 
-mastodon:
-  - username: NotUsec
-    instance: infosec.exchange
+#mastodon:
+#  - username: NotUsec
+#    instance: [сюда линк до сайта/форума, где есть профиль]
 github_username:  NotUsec
 #google_analytics:
 # Блин, лучше бы Яндекс аналитику добавили :/
