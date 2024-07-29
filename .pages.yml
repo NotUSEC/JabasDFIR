@@ -15,7 +15,7 @@ content:
       - { name: cover, label: Preview image, type: image, description: Img for link preview }
   - name: homepage
     label: Homepage
-    path: ""
+    path: 'glavnaya-1.md'
     type: file
     fields:
       - { name: title, label: Title, type: string }
