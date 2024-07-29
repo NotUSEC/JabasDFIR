@@ -1,9 +1,6 @@
 ---
-#
-# By default, content added below the "---" mark will appear in the home page
-# between the top bar and the list of recent posts.
-# To change the home page layout, edit the _layouts/home.html file.
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-#
+title: Главная
 layout: home
+description: Главная страница с описанием и ссылками на разделы
 ---
+<h1 style="text-align: center"><strong>Ну типа основная страница</strong></h1>
