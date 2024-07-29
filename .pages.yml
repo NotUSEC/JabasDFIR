@@ -14,9 +14,3 @@ content:
       - { name: icon, label: Icon, type: string }
       - { name: image, label: Image, type: image }
       - { name: body, label: Body, type: rich-text }
-  content:
-    - name: Nav
-      label: Nav
-      type: collection
-      path: _home
-      
