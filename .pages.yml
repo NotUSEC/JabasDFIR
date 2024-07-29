@@ -4,6 +4,8 @@ content:
     label: Posts
     type: collection
     path: _posts
+    view:
+      fields: [ title, date ]
     fields:
       - { name: title, label: Title, type: string }
       - { name: layout, type: string, hidden: true, default: post }
@@ -12,4 +14,9 @@ content:
       - { name: icon, label: Icon, type: string }
       - { name: image, label: Image, type: image }
       - { name: body, label: Body, type: rich-text }
-  
+  content:
+    - name: Nav
+      label: Nav
+      type: collection
+      path: _home
+      
