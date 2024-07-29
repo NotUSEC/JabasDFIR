@@ -1,7 +1,6 @@
-title: JabasDFIR
-description: Zabba
-url: https://notusec.github.io
-cover: /assets/repository-open-graph-template.png
+#description: Zabba
+#url: https://notusec.github.io
+#cover: "/assets/repository-open-graph-template.png"
 ###########################################################
 ### Welcome to Beautiful Jekyll!
 ### This config file is meant for settings that affect your entire website. When you first
@@ -15,6 +14,7 @@ cover: /assets/repository-open-graph-template.png
 
 # Name of website
 #title: My website
+title: JabasDFIR
 
 # Your name to show in the footer
 author: Zabba
@@ -26,9 +26,9 @@ author: Zabba
 navbar-links:
   About Me: "aboutme"
   Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
+    - NotUSEC on github: "https://github.com/NotUSEC"
     - Learn markdown: "https://www.markdowntutorial.com/"
-  Author's home: "https://deanattali.com"
+  Author's home: "https://notusec.github.io/JabasDFIR/"
 
 ################
 # --- Logo --- #
@@ -43,7 +43,7 @@ round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
 # then specify the following parameter
-#title-img: /path/to/image
+title-img: "/assets/repository-open-graph-template.png"
 
 
 #####################################
@@ -54,14 +54,14 @@ round-avatar: true
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
-  email: "someone@example.com"
-  rss: true  # remove this line if you don't want to show an RSS link at the bottom
-  facebook: deanattali
-  github: daattali
-  twitter: daattali
-  patreon: DeanAttali
-  youtube: "@daattali"
-  whatsapp: 15551212
+  email: "exovedo@yandex.ru"
+  #rss: true  # remove this line if you don't want to show an RSS link at the bottom
+  #facebook: deanattali
+  github: NotUSEC
+  #twitter: daattali
+  #patreon: DeanAttali
+  #youtube: "@daattali"
+  #whatsapp: 15551212
 #  medium: yourname
 #  reddit: yourname
 #  linkedin: daattali
@@ -89,7 +89,7 @@ social-network-links:
 
 # If you want your website to generate an RSS feed, provide a description
 # The URL for the feed will be https://<your_website>/feed.xml
-rss-description: This website is a virtual proof that I'm awesome
+#rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
 # --- General options --- #
@@ -100,7 +100,7 @@ share-links-active:
   twitter: true
   facebook: true
   linkedin: true
-  vk: false
+  vk: true
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
@@ -213,10 +213,9 @@ footer-hover-col: "#0085A1"
 # See more details about the parameters below at https://utteranc.es/
 #utterances:
 #  repository: # GitHub username/repository eg. "daattali/beautiful-jekyll"
-repository: NotUsec/JabasDFIR
+#repository: NotUsec/JabasDFIR
 #  issue-term: title   # Mapping between blog posts and GitHub issues
 #  theme: github-light # Utterances theme
-theme: minima
 #  label: blog-comments # Label that will be assigned to GitHub Issues created by Utterances
 
 # To use Staticman comments, uncomment the following section. You may leave the reCaptcha
@@ -281,7 +280,7 @@ defaults:
       type: "posts"
     values:
       layout: "post"
-      comments: true  # add comments to all blog posts
+      comments: false  # add comments to all blog posts
       social-share: true # add social media sharing buttons to all blog posts
   -
     scope:
