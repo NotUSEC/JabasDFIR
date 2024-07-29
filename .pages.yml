@@ -11,5 +11,16 @@ content:
       - { name: layout, type: string, hidden: true, default: post }
       - { name: description, label: Description, type: string, options: { maxlenght: 160 } }
       - { name: icon, label: Icon, type: string }
-      - { name: image, label: Image, type: image }
       - { name: body, label: Body, type: rich-text }
+      - { name: cover, label: Preview image, type: image, description: Img for link preview }
+  - name: homepage
+    label: Homepage
+    path: ""
+    type: file
+    fields:
+      - { name: title, label: Title, type: string }
+      - { name: layout, type: string, hidden: true, default: post }
+      - { name: description, label: Description, type: string, options: { maxlenght: 160 } }
+      - { name: icon, label: Icon, type: string }
+      - { name: body, label: Body, type: rich-text }
+      - { name: cover, label: Preview image, type: image, description: Img for link preview }
