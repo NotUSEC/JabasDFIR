@@ -19,6 +19,15 @@ title: JabasDFIR
 # Your name to show in the footer
 author: Zabba
 
+theme: minima
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-github-metadata
+  - jekyll-feed
+  - jekyll-seo-tag
+
 ###############################################
 # --- List of links in the navigation bar --- #
 ###############################################
@@ -298,24 +307,6 @@ exclude:
   - README.md
   - screenshot.png
   - docs/
-
-plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-github-metadata
-  - jekyll-github-metadata
-  - jekyll-seo-tag
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-github-metadata
-  - jekyll-coffeescript
-  - jekyll-commonmark-ghpages
-  - jekyll-gist
-  - jekyll-relative-links
-  - jekyll-optional-front-matter
-  - jekyll-readme-index
-  - jekyll-default-layout
-  - jekyll-titles-from-headings
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
