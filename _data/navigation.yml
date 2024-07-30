@@ -1,10 +1,12 @@
 - title: Главная
   url: /
-
+- title: Обо мне
+  url: /about.md
 - title: DFIR
   url: /_posts/DFIR/
   sublinks:
     - title: Новые службы Windows
       url: /_posts/DFIR/WindowsNewService
+    - title: separator
     - title: Полезные ссылки
       url: /_posts/DFIR/resources
