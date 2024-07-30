@@ -6,18 +6,20 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-/* NAVIGATION BAR
- -------------------------------------------------- */
+/* Настройка выпадающих списков
+-------------------------------------------------- */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    transition: max-height 0.3s ease-out;
+    overflow: hidden;
+}
 
-nav ul {
-    list-style-type: none;
-}
-nav li {
-    line-height: 30px;
-}
-nav a {
-    text-decoration: none;
-}
-nav li.active a {
-    color: #ffffff;
+.dropdown:hover .dropdown-content {
+    display: block;
+    max-height: 200px; /* Высота списка */
 }
