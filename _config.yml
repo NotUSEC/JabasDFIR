@@ -30,7 +30,10 @@ plugins:
 header_pages:
   - about.md
   - navpage.md
-  - _posts/DFIR/
+  - _posts/DFIR/index.md
+  - _posts/OSINT/index.md
+  - _posts/Network/index.md
+  - _posts/Education/index.md
   
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: false
