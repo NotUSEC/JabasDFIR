@@ -1,6 +1,6 @@
 ---
 layout: base
 title: Network
-permalink: _posts/Network/
+permalink: Network/
 ---
 # Описание раздела
