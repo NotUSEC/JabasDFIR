@@ -2,8 +2,9 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-overflow-y: scroll;
-
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
+
+
+overflow-y: scroll;
