@@ -1,5 +1,5 @@
 ---
-layout: base
+layout: post
 title: DFIR
 permalink: _posts/DFIR/
 ---
