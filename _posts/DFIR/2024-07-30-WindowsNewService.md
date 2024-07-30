@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Анализ новых служб Windows
-permalink: _posts/DFIR/
+permalink: _posts/DFIR/WindowsNewService
 ---
 
 Notes from the DFSP episode on New Service Triage
