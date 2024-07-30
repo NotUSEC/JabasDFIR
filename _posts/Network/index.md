@@ -1,6 +1,6 @@
 ---
 layout: post
 title: Сети
-permalink: /Network/
+permalink: Network
 ---
 # Описание раздела
