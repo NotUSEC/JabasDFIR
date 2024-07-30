@@ -1,0 +1,17 @@
+---
+layout: page
+title: Resources
+permalink: _posts/DFIR/resources
+---
+
+Контентик, пока что 
+
+# DFIR notes
+Список полезных сайтов, видосов, форумов
+{% for note in site.dfir-notes %}* [{{note.title}}]({{note.url}})
+{% endfor %}
+
+# Other
+* [KAPE Presentation](https://docs.google.com/presentation/d/1su_DDs71_ZUzTdI7oRx_DcxNE608Ia2A2Qo6sITqIFI/edit?usp=sharing) - Различные презентации по KAPE
+* [Home Lab Presentation](https://docs.google.com/presentation/d/1NKSB0CqVIPa-RxK0DOfrdyoU3F016baJBhjrx49ZbO8/edit?usp=sharing) - Различные презентации для домашней Forensic-лаборатории
+* [SANS Posters](https://www.sans.org/security-resources/posters/) - Различные постеры и cheat-sheet по DFIR и не только
