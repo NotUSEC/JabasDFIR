@@ -19,46 +19,6 @@ permalink: navpage
         </div>
     </div>
 
-    <div class="dropdown">
-        <a href="#" onclick="toggleDropdownOSINT()">OSINT</a>
-        <div class="dropdown-content" id="dropdownContentOSINT">
-            {%- for post in site.posts -%}
-                {%- if post.url contains '/_posts/OSINT/' -%}
-                    <li>
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {%- endif -%}
-            {%- endfor -%}
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <a href="#" onclick="toggleDropdownNET()">Network</a>
-        <div class="dropdown-content" id="dropdownContentNET">
-            {%- for post in site.posts -%}
-                {%- if post.url contains '/_posts/Network/' -%}
-                    <li>
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {%- endif -%}
-            {%- endfor -%}
-        </div>
-    </div>
-
-    <div class="dropdown">
-        <a href="#" onclick="toggleDropdownEDU()">Education</a>
-        <div class="dropdown-content" id="dropdownContentEDU">
-            {%- for post in site.posts -%}
-                {%- if post.url contains '/_posts/Education/' -%}
-                    <li>
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-                    </li>
-                {%- endif -%}
-            {%- endfor -%}
-        </div>
-    </div>
-
-
   <script>
         function toggleDropdownDFIR() {
             var dropdownContent = document.getElementById("dropdownContentDFIR");
