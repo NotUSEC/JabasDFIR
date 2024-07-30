@@ -28,16 +28,10 @@ plugins:
 # If you want to link only specific pages in your header, use this and add the path to the pages
 # in order as they should show up.
 header_pages:
-  - title: Обо мне
-    url: about.md
-  - title: Навигация
-    url: navpage.md
-    subheader_pages:
-      - title: Ресурсы
-        url: /_posts/DFIR/resources
-      - title: Службы Windows
-        url: /_posts/DFIR/WindowsNewService
-
+  - about.md
+  - navpage.md
+  - _posts/DFIR/
+  
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: false
 
