@@ -3,9 +3,9 @@ layout: page
 title: Навигация по сайту
 permalink: navpage
 ---
-Страница для навигации по материалам <br>
+<h1>Страница для навигации по материалам</h1><br>
     <div class="dropdown">
-        <a>DFIR</a>
+        <h2>DFIR</h2>
         <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/DFIR/' -%}
@@ -18,7 +18,7 @@ permalink: navpage
     </div>
 <br>
     <div class="dropdown">
-        <a>OSINT</a>
+        <h2>OSINT</h2>
         <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/OSINT/' -%}
@@ -31,7 +31,7 @@ permalink: navpage
     </div>
 <br>
     <div class="dropdown">
-        <a>Network</a>
+        <h2>Network</h2>
         <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/Network/' -%}
@@ -44,7 +44,7 @@ permalink: navpage
     </div>
 <br>
     <div class="dropdown">
-        <a>Education</a>
+        <h2>Education</h2>
         <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/Education/' -%}
