@@ -8,10 +8,10 @@ permalink: navpage
     <div class="dropdown">
         <a href="#">DFIR</a>
         <div class="dropdown-content">
-            {% for page in site.pages %}
-                {% if page.url contains '_posts/dfir/' %}
-                    <a href="{{ page.url }}">{{ page.title }}</a>
-                {% endif %}
-            {% endfor %}
+            {%- for page in site.posts -%}
+                {%- if page.url contains '/_posts/DFIR/' -%}
+                    <a href="{{ post.url }}">{{ post.title }}</a>
+                {%- endif -%}
+            {%- endfor -%}
         </div>
     </div>
