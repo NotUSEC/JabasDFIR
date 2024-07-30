@@ -7,7 +7,7 @@ permalink: navpage
 
 
     <div class="dropdown">
-        <a href="#" onclick="toggleDropdown()">DFIR</a>
+        <a href="#" onclick="toggleDropdownDFIR()">DFIR</a>
         <div class="dropdown-content" id="dropdownContentDFIR">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/DFIR/' -%}
@@ -20,7 +20,7 @@ permalink: navpage
     </div>
 
     <div class="dropdown">
-        <a href="#" onclick="toggleDropdown()">OSINT</a>
+        <a href="#" onclick="toggleDropdownOSINT()">OSINT</a>
         <div class="dropdown-content" id="dropdownContentOSINT">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/OSINT/' -%}
@@ -33,7 +33,7 @@ permalink: navpage
     </div>
 
     <div class="dropdown">
-        <a href="#" onclick="toggleDropdown()">Network</a>
+        <a href="#" onclick="toggleDropdownNET()">Network</a>
         <div class="dropdown-content" id="dropdownContentNET">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/Network/' -%}
@@ -46,7 +46,7 @@ permalink: navpage
     </div>
 
     <div class="dropdown">
-        <a href="#" onclick="toggleDropdown()">Education</a>
+        <a href="#" onclick="toggleDropdownEDU()">Education</a>
         <div class="dropdown-content" id="dropdownContentEDU">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/Education/' -%}
@@ -60,7 +60,7 @@ permalink: navpage
 
 
   <script>
-        function toggleDropdown() {
+        function toggleDropdownDFIR() {
             var dropdownContent = document.getElementById("dropdownContentDFIR");
             if (dropdownContent.style.display === "none") {
                 dropdownContent.style.display = "block";
@@ -69,7 +69,7 @@ permalink: navpage
             }
         }
 
-            function toggleDropdown() {
+            function toggleDropdownOSINT() {
             var dropdownContent = document.getElementById("dropdownContentOSINT");
             if (dropdownContent.style.display === "none") {
                 dropdownContent.style.display = "block";
@@ -78,7 +78,7 @@ permalink: navpage
             }
         }
 
-            function toggleDropdown() {
+            function toggleDropdownNET() {
             var dropdownContent = document.getElementById("dropdownContentNET");
             if (dropdownContent.style.display === "none") {
                 dropdownContent.style.display = "block";
@@ -87,7 +87,7 @@ permalink: navpage
             }
         }
 
-            function toggleDropdown() {
+            function toggleDropdownEDU() {
             var dropdownContent = document.getElementById("dropdownContentEDU");
             if (dropdownContent.style.display === "none") {
                 dropdownContent.style.display = "block";
