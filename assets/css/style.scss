@@ -5,21 +5,3 @@
 @import
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
-
-/* Настройка выпадающих списков
--------------------------------------------------- */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    padding: 10px;
-    transition: max-height 0.3s ease-out;
-    overflow: hidden;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    max-height: 200px; 
-}
