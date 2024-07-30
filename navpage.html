@@ -1,0 +1,17 @@
+---
+layout: page
+title: Навигация по сайту
+permalink: navpage
+---
+Страница для навигации по материалам
+
+    <div class="dropdown">
+        <a href="#">DFIR</a>
+        <div class="dropdown-content">
+            {% for page in site.pages %}
+                {% if page.url contains '/dfir/' %}
+                    <a href="{{ page.url }}">{{ page.title }}</a>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
