@@ -1,6 +1,6 @@
 ---
-layout: base
-title: Network
-permalink: Network/
+layout: post
+title: Сети
+permalink: /Network/
 ---
 # Описание раздела
