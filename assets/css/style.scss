@@ -6,19 +6,6 @@
   "minima/skins/{{ site.minima.skin | default: 'classic' }}",
   "minima/initialize";
 
-nav ul {
-    list-style-type: none;
-}
-nav li {
-    line-height: 30px;
-}
-nav a {
-    text-decoration: none;
-}
-nav li.active a {
-    color: #ffffff;
-}
-
 /* NAVIGATION BAR
  -------------------------------------------------- */
 #navigation {
