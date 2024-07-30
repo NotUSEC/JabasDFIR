@@ -1,0 +1,10 @@
+- title: Главная
+  url: /
+
+- title: DFIR
+  url: /_posts/DFIR/
+  sublinks:
+    - title: Новые службы Windows
+      url: /_posts/DFIR/WindowsNewService
+    - title: Полезные ссылки
+      url: /_posts/DFIR/resources
