@@ -49,3 +49,4 @@ Notes from the DFSP episode on New Service Triage
 # References
 * [DFSP - New Service Triage episode](https://digitalforensicsurvivalpodcast.com/2020/06/23/dfsp-227-new-service-triage/)
 * [Windows - Event 4697 Documentation](https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/event-4697)
+* [Оригинал поста на английском языке by NetSecNinja](https://netsecninja.github.io/dfir-notes/new-service-traige/)
