@@ -7,8 +7,8 @@ permalink: navpage
 
 
     <div class="dropdown">
-        <a href="#" onclick="toggleDropdownDFIR()">DFIR</a>
-        <div class="dropdown-content" id="dropdownContentDFIR">
+        <a href="#" onclick="toggleDropdown()">DFIR</a>
+        <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/DFIR/' -%}
                     <li>
@@ -20,8 +20,8 @@ permalink: navpage
     </div>
 
   <script>
-        function toggleDropdownDFIR() {
-            var dropdownContent = document.getElementById("dropdownContentDFIR");
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
             if (dropdownContent.style.display === "none") {
                 dropdownContent.style.display = "block";
             } else {
