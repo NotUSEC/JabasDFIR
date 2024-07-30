@@ -30,10 +30,6 @@ plugins:
 header_pages:
   - about.md
   - navpage.md
-  - /_posts/DFIR/index.md
-  - /_posts/OSINT/index.md
-  - /_posts/Network/index.md
-  - /_posts/Education/index.md
   
 # Set to `true` to show excerpts on the homepage.
 show_excerpts: false
@@ -53,7 +49,7 @@ minima:
   # Minima date format.
   # The default value is "%b %d, %Y" (e.g. Nov 14, 2023) 
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
-  date_format: "%b-%d-%Y"
+  date_format: "%d-%b-%Y"
 
   # Generate social links in footer.
   social_links:
