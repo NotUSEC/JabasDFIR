@@ -9,7 +9,7 @@ permalink: navpage
         <a href="#">DFIR</a>
         <div class="dropdown-content">
             {% for page in site.pages %}
-                {% if page.url contains '/dfir/' %}
+                {% if page.url contains '_posts/dfir/' %}
                     <a href="{{ page.url }}">{{ page.title }}</a>
                 {% endif %}
             {% endfor %}
