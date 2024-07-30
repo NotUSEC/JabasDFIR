@@ -3,11 +3,12 @@ layout: page
 title: Навигация по сайту
 permalink: navpage
 ---
-Страница для навигации по материалам
+# Страница для навигации по материалам
+
 
     <div class="dropdown">
         <a href="#" onclick="toggleDropdown()">DFIR</a>
-        <div class="dropdown-content" id="dropdownContent">
+        <div class="dropdown-content" id="dropdownContentDFIR">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/DFIR/' -%}
                     <li>
@@ -17,9 +18,77 @@ permalink: navpage
             {%- endfor -%}
         </div>
     </div>
+
+    <div class="dropdown">
+        <a href="#" onclick="toggleDropdown()">OSINT</a>
+        <div class="dropdown-content" id="dropdownContentOSINT">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/OSINT/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#" onclick="toggleDropdown()">Network</a>
+        <div class="dropdown-content" id="dropdownContentNET">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/Network/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+
+    <div class="dropdown">
+        <a href="#" onclick="toggleDropdown()">Education</a>
+        <div class="dropdown-content" id="dropdownContentEDU">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/Education/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+
+
   <script>
         function toggleDropdown() {
-            var dropdownContent = document.getElementById("dropdownContent");
+            var dropdownContent = document.getElementById("dropdownContentDFIR");
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+
+            function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContentOSINT");
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+
+            function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContentNET");
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+
+            function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContentEDU");
             if (dropdownContent.style.display === "none") {
                 dropdownContent.style.display = "block";
             } else {
