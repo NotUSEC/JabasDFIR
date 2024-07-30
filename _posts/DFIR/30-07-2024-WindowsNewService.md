@@ -1,7 +1,7 @@
 ---
-layout: page
-title: New Service Triage
-permalink: dfir-notes/new-service-traige/
+layout: post
+title: Анализ новых служб Windows
+permalink: _posts/DFIR/
 ---
 
 Notes from the DFSP episode on New Service Triage
