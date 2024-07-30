@@ -6,12 +6,24 @@ permalink: navpage
 Страница для навигации по материалам
 
     <div class="dropdown">
-        <a href="#">DFIR</a>
-        <div class="dropdown-content">
+        <a href="#" onclick="toggleDropdown()">DFIR</a>
+        <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/DFIR/' -%}
-                    <a href="{{ post.url }}">{{ post.title }}</a>
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
                 {%- endif -%}
             {%- endfor -%}
         </div>
     </div>
+  <script>
+        function toggleDropdown() {
+            var dropdownContent = document.getElementById("dropdownContent");
+            if (dropdownContent.style.display === "none") {
+                dropdownContent.style.display = "block";
+            } else {
+                dropdownContent.style.display = "none";
+            }
+        }
+  </script>
