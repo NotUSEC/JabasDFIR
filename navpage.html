@@ -20,11 +20,10 @@ permalink: navpage
   <script>
         function toggleDropdown() {
             var dropdownContent = document.getElementById("dropdownContent");
-            var dropdownContent.style.display = "none";
-            if (dropdownContent.style.display === "none") {
-                dropdownContent.style.display = "block";
-            } else {
+            if (dropdownContent.style.display === "block") {
                 dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "block";
             }
         }
   </script>
