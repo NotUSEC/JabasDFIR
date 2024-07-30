@@ -3,11 +3,9 @@ layout: page
 title: Навигация по сайту
 permalink: navpage
 ---
-Страница для навигации по материалам
-
-
+Страница для навигации по материалам <br>
     <div class="dropdown">
-        <a href="#" onclick="toggleDropdown()">DFIR</a>
+        <a>DFIR</a>
         <div class="dropdown-content" id="dropdownContent">
             {%- for post in site.posts -%}
                 {%- if post.url contains '/_posts/DFIR/' -%}
@@ -18,14 +16,42 @@ permalink: navpage
             {%- endfor -%}
         </div>
     </div>
-
-  <script>
-        function toggleDropdown() {
-            var dropdownContent = document.getElementById("dropdownContent");
-            if (dropdownContent.style.display === "none") {
-                dropdownContent.style.display = "block";
-            } else {
-                dropdownContent.style.display = "none";
-            }
-        }
-  </script>
+<br>
+    <div class="dropdown">
+        <a>OSINT</a>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/OSINT/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+<br>
+    <div class="dropdown">
+        <a>Network</a>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/Network/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+<br>
+    <div class="dropdown">
+        <a>Education</a>
+        <div class="dropdown-content" id="dropdownContent">
+            {%- for post in site.posts -%}
+                {%- if post.url contains '/_posts/Education/' -%}
+                    <li>
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                    </li>
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
