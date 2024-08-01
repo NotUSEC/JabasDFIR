@@ -27,7 +27,7 @@ permalink: _posts/DFIR/resources
 * [tria.ge](https://tria.ge) - Песочница с динамическим и статическим анализом, требуется регистрация для взаимодействия. Сам не пользовался, по отзывам работает так же эффективно как и any.run (местами лучше)
 * [Windows Sandbox](https://learn.microsoft.com/ru-ru/windows/security/application-security/application-isolation/windows-sandbox/windows-sandbox-overview) - встроенный модуль Windows, который необходимо догрузить. Позволяет быстро развернуть пустую ВМ Windows, в которой можно анализировать файлы как угодно. Есть возможность создания шаблона, чтобы сразу было предустановлено необходимое ПО. Из минусов - при выходе ВПО за пределы виртуализации, вред будет нанесён хост-машине.
 * [DRAKVUF](https://github.com/tklengyel/drakvuf), [DRAKVUF SandBox](https://github.com/CERT-Polska/drakvuf-sandbox), [DRAKVUF плагины](https://habr.com/ru/companies/pt/articles/566698/) - Opensource-песочница, устанавливается как утилита на Linux-машине. Может эмулировать и Windows и Linux окружения. Доступ к управлению через веб-интерфейс, и не позволяет взаимодействовать с виртуальным окружением.
-* [PT SandBox] и [Kaspersky SandBox](https://support.kaspersky.com/KSB/2.0/ru-RU/223822.htm) - Корпоративные песочницы, для автоматического анализа на потоке, при помощи статических и динамических методов анализа.
+* [PT SandBox](https://www.ptsecurity.com/ru-ru/products/sandbox/) и [Kaspersky SandBox](https://support.kaspersky.com/KSB/2.0/ru-RU/223822.htm) - Корпоративные песочницы, для автоматического анализа на потоке, при помощи статических и динамических методов анализа.
 
 # Форумы в клирнете
 * [РУ Сфера](ru-sfera.pw/forums) - ИБ-форум
