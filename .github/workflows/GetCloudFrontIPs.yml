@@ -24,7 +24,7 @@ jobs:
 
     - name: Extract IPs and save
       run: |
-        grep -oP '\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\/\d{1,2})?\b' RAWcloudfront.txt > ClFrntips.txt
+        grep -oP '\b\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}(\/\d{1,2})?\b' RAWcloudfront.txt > ActionsOutput/ClFrntips.txt
 
     - name: Remove tempFile
       run: |
@@ -36,5 +36,5 @@ jobs:
         author_name: 'GitHub Actions'
         author_email: 'actions@github.com'
         message: 'Update IPs'
-        add: 'ClFrntips.txt'
+        add: 'ActionsOutput/ClFrntips.txt'
         push: true
