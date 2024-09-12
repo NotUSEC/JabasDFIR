@@ -3,53 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CloudFront IPs</title>
+    <title>IP Parser</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
+            margin: 20px;
             background-color: #f4f4f4;
         }
-        #ip-list {
-            background-color: #fff;
+        pre {
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-        h1 {
-            text-align: center;
-        }
-        .ip-address {
-            margin: 5px 0;
         }
     </style>
 </head>
 <body>
-    <h1>CloudFront IP Addresses</h1>
-    <div id="ip-list">Loading IP addresses...</div>
-    <script>
-    document.addEventListener('DOMContentLoaded', () => {
-    const url = 'https://d7uri8nf7uskq.cloudfront.net/tools/list-cloudfront-ips';
-    const ipListElement = document.getElementById('ip-list');
+    <h1>IP Address List</h1>
+    <pre id="ip-list">Loading...</pre>
 
-    fetch(url)
-        .then(response => response.json())
-        .then(data => {
-            if (data && data.CLOUDFRONT_GLOBAL_IP_LIST) {
-                // Извлечение списка IP-адресов
-                const ipList = data.CLOUDFRONT_GLOBAL_IP_LIST;
-                // Отображение IP-адресов в элементе на странице
-                ipListElement.textContent = ipList.join('\n');
-            } else {
-                ipListElement.textContent = 'Не удалось загрузить IP-адреса.';
+    <script>
+        async function fetchAndDisplayIPs() {
+            try {
+                // Используйте прокси для обхода CORS
+                const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+                const targetUrl = 'https://d7uri8nf7uskq.cloudfront.net/tools/list-cloudfront-ips'; // Замените на ваш URL
+                const response = await fetch(proxyUrl + targetUrl);
+                
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                
+                const data = await response.text();
+                
+                const ipAddresses = data.split('\n').filter(line => line.trim() !== '');
+                
+                const ipListElement = document.getElementById('ip-list');
+                ipListElement.textContent = ipAddresses.join('\n');
+            } catch (error) {
+                console.error('Error fetching IP addresses:', error);
+                document.getElementById('ip-list').textContent = 'Failed to load IP addresses.';
             }
-        })
-        .catch(error => {
-            ipListElement.textContent = 'Ошибка при загрузке IP-адресов.';
-            console.error('Ошибка:', error);
-        });
-});
+        }
+
+        window.onload = fetchAndDisplayIPs;
     </script>
 </body>
 </html>
