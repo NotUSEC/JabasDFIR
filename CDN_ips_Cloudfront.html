@@ -29,39 +29,27 @@
     <h1>CloudFront IP Addresses</h1>
     <div id="ip-list">Loading IP addresses...</div>
     <script>
-        const ipListContainer = document.getElementById('ip-list');
-        
-        async function fetchIps() {
-            try {
-                const response = await fetch('https://d7uri8nf7uskq.cloudfront.net/tools/list-cloudfront-ips');
-                const data = await response.text();
-                
-                // Разбиваем ответ на строки и очищаем лишние пробелы
-                const ips = data.split('\n').filter(line => line.trim() !== '');
-                
-                ipListContainer.innerHTML = ''; // Очищаем предыдущий контент
-                
-                if (ips.length > 0) {
-                    ips.forEach(ip => {
-                        const div = document.createElement('div');
-                        div.className = 'ip-address';
-                        div.textContent = ip;
-                        ipListContainer.appendChild(div);
-                    });
-                } else {
-                    ipListContainer.textContent = 'No IP addresses found.';
-                }
-            } catch (error) {
-                ipListContainer.textContent = 'Error fetching IP addresses.';
-                console.error('Error fetching IP addresses:', error);
+    document.addEventListener('DOMContentLoaded', () => {
+    const url = 'https://d7uri8nf7uskq.cloudfront.net/tools/list-cloudfront-ips';
+    const ipListElement = document.getElementById('ip-list');
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            if (data && data.CLOUDFRONT_GLOBAL_IP_LIST) {
+                // Извлечение списка IP-адресов
+                const ipList = data.CLOUDFRONT_GLOBAL_IP_LIST;
+                // Отображение IP-адресов в элементе на странице
+                ipListElement.textContent = ipList.join('\n');
+            } else {
+                ipListElement.textContent = 'Не удалось загрузить IP-адреса.';
             }
-        }
-        
-        // Загружаем IP-адреса при загрузке страницы
-        fetchIps();
-        
-        // Обновляем IP-адреса раз в полчаса (1800000 мс)
-        setInterval(fetchIps, 1800000);
+        })
+        .catch(error => {
+            ipListElement.textContent = 'Ошибка при загрузке IP-адресов.';
+            console.error('Ошибка:', error);
+        });
+});
     </script>
 </body>
 </html>
