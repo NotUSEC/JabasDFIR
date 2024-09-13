@@ -25,7 +25,7 @@ jobs:
         done
         
     - name: Upload output.txt
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: outputipv4
         path: outputipv4.txt
