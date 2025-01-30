@@ -1,5 +1,5 @@
 # repo contains IPs and domains of resources reported via https://t.me/CyberSquattingChannel & https://t.me/AntiCyberSquattingBot
-# All entrires checked on Fortigate 7.2.*
+# All entries checked on Fortigate 7.2.*
 telegrarmpro.ru
 telegrarmapp.ru
 telegrarmzone.ru
