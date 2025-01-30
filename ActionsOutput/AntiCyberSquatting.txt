@@ -126,3 +126,4 @@ avito.id74617.ru
 sql2.avito-apps.online
 jetx.avitorgametech.xyz
 wb-cashback.ru
+5.252.178.78/32
