@@ -1,0 +1,1 @@
+# repo contains IPs and domains of resources reported via https://t.me/CyberSquattingChannel & https://t.me/AntiCyberSquattingBot
