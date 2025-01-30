@@ -1,12 +1,1 @@
-#
-5.252.178.78
-telegrarmplus.ru
-telegrarmworld.ru
-telegrarmchat.ru
-telegrarmconnect.ru
-telegrarmpro.ru
-telegrarmhub.ru
-telegrarmzone.ru
-telegrarmlive.ru
-telegrarmnet.ru
-telegrarmapp.ru
+# repo contains IPs and domains of resources reported via https://t.me/CyberSquattingChannel & https://t.me/AntiCyberSquattingBot
