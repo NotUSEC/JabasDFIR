@@ -1,5 +1,5 @@
 # repo contains IPs and domains of resources reported via https://t.me/CyberSquattingChannel & https://t.me/AntiCyberSquattingBot
-# IP-addresses only with subnet. All entires checked on Fortigate 7.2.*
+# All entires checked on Fortigate 7.2.*
 telegrarmpro.ru
 telegrarmapp.ru
 telegrarmzone.ru
@@ -126,4 +126,4 @@ avito.id74617.ru
 sql2.avito-apps.online
 jetx.avitorgametech.xyz
 wb-cashback.ru
-5.252.178.78/32
+5.252.178.78
