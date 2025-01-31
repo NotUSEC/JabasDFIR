@@ -321,3 +321,4 @@ reg-pro-yandex.ru
 10a.pays-bridge.ru
 id74624.ru
 avito.oplata3936.ru
+kaspersky-labs.team
