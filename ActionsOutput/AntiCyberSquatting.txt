@@ -1,2 +1,7 @@
 # repo contains IPs and domains of resources reported via https://t.me/CyberSquattingChannel & https://t.me/AntiCyberSquattingBot
 # All entries checked on Fortigate 7.2.*
+webmail.ebuildingsource.com
+traveladdicts.top
+stematockeoff.shop
+greatvacuutos.cyou
+thebeautylovelytop.top
