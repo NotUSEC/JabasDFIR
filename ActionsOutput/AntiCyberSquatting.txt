@@ -950,3 +950,5 @@ www.lange.store
 www.esign-creafactory.store
 www.atieowen.art
 www.arehouse-inventory-38840.bond
+leo.rpm-bin.link
+mirror.dpkg-source.info
