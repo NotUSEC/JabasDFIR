@@ -952,3 +952,11 @@ www.atieowen.art
 www.arehouse-inventory-38840.bond
 leo.rpm-bin.link
 mirror.dpkg-source.info
+kilimanjaro.crabdance.com
+kilimanjaro.dns.army
+kilimanjaro.run.place
+kilimanjaro.hopto.org
+kilimanjaro.bigmoney.biz
+burkinafaso.duckdns.org
+kilimanjaro.cloudns.nz
+kilimanjaro.theworkpc.com
