@@ -1385,3 +1385,5 @@ id74681.ru
 vitoa.ru
 oplata3976.ru
 id74682.ru
+autodiscover.kazimierz-dolny.pl
+autodiscover.gmina.pl
