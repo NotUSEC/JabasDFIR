@@ -1593,3 +1593,5 @@ niex.dyndns.tv
 f1083567.xsph.ru
 recaptcha-verify-9n.pages.dev
 openweathermap.top
+kvr.ac
+boulka.pl
